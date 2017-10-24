@@ -33,6 +33,8 @@ body {
     align-items: center;
     justify-content: flex-end;
     margin: 0;
+    background-position: left;
+    background-size: cover;
 }
 
 .card__right {
@@ -47,12 +49,6 @@ body {
 .card__right--bottom {
     width: 85%;
     margin: 0 auto;
-}
-
-.card__left--one,
-.card__left--two {
-    background-position: left;
-    background-size: cover;
 }
 
 .card__left--one {
