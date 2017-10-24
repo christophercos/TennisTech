@@ -1,0 +1,110 @@
+// All Scss goes here.
+@import "_setup.scss";
+@import "_variables.scss";
+@import "_typography.scss";
+body {
+    background: $green;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+.card {
+    width: 700px;
+    height: 525px;
+    background: $white;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 7px;
+    display: flex;
+    transition: all 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card__left {
+    width: 50%;
+    height: 100%;
+    border-radius: 7px 0 0 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.card__right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__right--top,
+.card__right--bottom {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.card__left--one,
+.card__left--two {
+    background-position: left;
+    background-size: cover;
+}
+
+.card__left--one {
+    background-image: url("../../assets/img1.jpg");
+}
+
+.card__left--two {
+    background-image: url("../../assets/img2.jpg");
+}
+
+.concertDesc {
+    margin-top: 40px;
+    width: 75%;
+    line-height: 2rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+li {
+    display: flex;
+    margin-top: 10px;
+}
+
+img {
+    margin-right: 10px;
+}
+
+.card__right--bottom p {
+    display: inline-block;
+    width: 50%;
+}
+
+button {
+    width: 80%;
+    height: 45px;
+    border: none;
+    background: $green;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    transition: all 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+@import "_breakpoints.scss";
